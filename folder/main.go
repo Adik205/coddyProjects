@@ -6,8 +6,8 @@ import (
 )
 
 func main() {
-	nums := []int{1, 1, 2, 2, 2, 3, 4}
+	numRows := 5
 
-	res := coddy.RemoveDuplicates(nums)
+	res := coddy.GeneratePascalTriangle(numRows)
 	fmt.Println(res)
 }
