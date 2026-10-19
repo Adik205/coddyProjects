@@ -6,9 +6,8 @@ import (
 )
 
 func main() {
-	s := "aabb"
-	t := "abbb"
+	nums := []int{1, 1, 2, 2, 2, 3, 4}
 
-	res := coddy.IsAnagram(s, t)
+	res := coddy.RemoveDuplicates(nums)
 	fmt.Println(res)
 }
