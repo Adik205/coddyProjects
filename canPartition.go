@@ -1,16 +1,18 @@
+package coddy
+
 import "slices"
 
-func canPartition(nums []int) (bool) {
-    var sum int
+func CanPartition(nums []int) bool {
+	var sum int
 	for _, num := range nums {
 		sum += num
 	}
 
-	if sum % 2 == 1 {
+	if sum%2 == 1 {
 		return false
 	}
-	isReach := make([]bool, sum/2+1) // true false
-	usedPos := make([][]int, sum/2+1) // [] 
+	isReach := make([]bool, sum/2+1)  // true false
+	usedPos := make([][]int, sum/2+1) // []
 	isReach[0] = true
 	for i := 1; i < len(isReach); i++ {
 		for j := 0; j < len(nums); j++ {
