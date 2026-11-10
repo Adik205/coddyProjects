@@ -6,8 +6,9 @@ import (
 )
 
 func main() {
-	numRows := 5
+	s := "aaaaaaa"
+	wordDict := []string{"aaaa", "aaa"}
 
-	res := coddy.GeneratePascalTriangle(numRows)
+	res := coddy.WordBreak(s, wordDict)
 	fmt.Println(res)
 }
