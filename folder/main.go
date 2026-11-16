@@ -6,9 +6,8 @@ import (
 )
 
 func main() {
-	s := "aaaaaaa"
-	wordDict := []string{"aaaa", "aaa"}
+	s := "codingisfun"
 
-	res := coddy.WordBreak(s, wordDict)
-	fmt.Println(res)
+	res := coddy.PartitionLabels(s)
+	fmt.Println("Result: ", res)
 }
